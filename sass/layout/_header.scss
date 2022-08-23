@@ -69,7 +69,90 @@
                  background-color: var(--accent-color);
                }
              }
+            .auth-nav {
+             display: block;
+            margin-left: 96px    ;
+            }
+             .auth-nav {
+            display: block;
+             & .auth-nav__item:not(:last-child) {
+            margin-bottom: 10px;
+            }
+            & .auth-nav__link:hover,
+            & .auth-nav__link:focus {
+            color: var(--accent-color);
+            }
+            }            
+            .auth-nav .auth-nav__link {
+            color: #757575;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            font-size: 14px;
+            line-height: 1.14;
+            display: flex;
+            align-items: center;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            //  .auth-nav .auth-nav__item + .auth-nav__item {
+            //    margin-left: 50px;
+             //  }
+            
+            .icon-envel {
+            fill: #757575;
+            margin-right: 10px;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            .auth-nav__link:hover &,
+            .auth-nav__link:focus & {
+            fill: var(--accent-color);
+             }
+            }
+            .icon-phone {
+            margin-right: 10px;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            .auth-nav__link:hover &,
+            .auth-nav__link:focus & {
+            fill: var(--accent-color);
+            }
+            &:hover,
+            &:focus {
+            fill: var(--accent-color);
+             }
+            }
+            
+            .auth-icon {
+            margin-right: 10px;
   }
+}
+@media screen and (min-width: 1200px) {
+.header__container {
+          display: flex;
+          align-items: center;
+        }
+        .main-nav {
+          display: flex;
+          align-items: center;
+        }                
+         .auth-nav {
+         display: flex;
+          margin-left: auto;
+        }
+        .auth-nav {
+        display: flex;
+         & .auth-nav__item:not(:last-child) {
+        margin-right: 50 px;
+         }
+         & .auth-nav__link:hover,
+         & .auth-nav__link:focus {
+        color: var(--accent-color);
+        }
+        }        
+                   
+        .auth-nav .auth-nav__item + .auth-nav__item {
+         margin-left: 50px;
+         }
+        
+        }
 // .header__container {
 //   display: flex;
 //   align-items: center;
