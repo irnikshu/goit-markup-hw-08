@@ -16,15 +16,16 @@
      display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      width: 354px;
+      // width: 354px;
     }
     .features-list__descr{
-      flex-basis: calc((100%-30px)/2);
+      flex-basis: calc((100% - 30px)/2);
     }
 }
 @media screen and (min-width: 1200px){
   .features-list {
       display: flex;
+      flex-wrap: nowrap;
     }
     .features-list__descr {
     width: 270px;    
