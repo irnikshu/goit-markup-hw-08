@@ -5,9 +5,9 @@ footer {
   display: flex;
 }
 .footer_container {
-  display: flex;
-  align-items: baseline;
-  /* justify-content: flex-start; */
+  display: block;  
+  text-align: center;  
+  // align-items: baseline;  
 }
 .footer-list {
   display: flex;
@@ -105,14 +105,15 @@ footer {
 
 .footer-name {
   display: block;
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 .footer-networks {
   display: block;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-right: 93px;
+  // margin-right: 93px;
+  margin-top: 60px;
 }
 
 .online-input {
@@ -140,9 +141,11 @@ footer {
 }
 
 .online-form {
-  display: flex;
+  // display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .online-btn {
   width: 200px;
@@ -162,14 +165,20 @@ footer {
 
   display: flex;
   align-items: center;
-  text-align: center;
+  
+  
   letter-spacing: 0.06em;
 
   color: #ffffff;
-  margin-left: 10px;
+  // margin-left: 10px;
+  // margin-right: 0;
 }
 .subscription {
+
   display: block;
+  margin-top: 60px;
+  text-align: center;
+  align-items: center;
 }
 .online-input {
   padding-left: 16px;
@@ -189,4 +198,5 @@ footer {
 
 .online-icon {
   margin-left: 10px;
+
 }

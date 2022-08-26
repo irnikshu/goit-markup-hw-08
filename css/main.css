@@ -1034,9 +1034,8 @@ footer {
 }
 
 .footer_container {
-  display: flex;
-  align-items: baseline;
-  /* justify-content: flex-start; */
+  display: block;
+  text-align: center;
 }
 
 .footer-list {
@@ -1146,7 +1145,6 @@ footer {
 
 .footer-name {
   display: block;
-  margin-right: 70px;
 }
 
 .footer-networks {
@@ -1154,7 +1152,7 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-right: 93px;
+  margin-top: 60px;
 }
 
 .online-input {
@@ -1184,9 +1182,10 @@ footer {
 }
 
 .online-form {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .online-btn {
@@ -1205,14 +1204,15 @@ footer {
   line-height: 1.87;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 10px;
 }
 
 .subscription {
   display: block;
+  margin-top: 60px;
+  text-align: center;
+  align-items: center;
 }
 
 .online-input {
