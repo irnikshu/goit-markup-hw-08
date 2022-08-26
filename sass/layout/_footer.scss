@@ -141,8 +141,9 @@ footer {
 }
 
 .online-form {
-  // display: flex;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  // display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -156,17 +157,13 @@ footer {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
   display: flex;
-  align-items: center;
-  
-  
+  align-items: center; 
   letter-spacing: 0.06em;
 
   color: #ffffff;
@@ -193,9 +190,40 @@ footer {
   &:focus {
     border-color: var(--accent-color);
   }
+  margin-bottom: 20px;
 }
 
 .online-icon {
   margin-left: 10px;
 
+}
+@media screen and (min-width: 768px){
+  .footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-networks{
+  margin-top: 0;
+}
+}
+@media screen and (min-width: 1200px){
+  .footer_container {
+  display: flex;
+  text-align: center;
+  align-items: baseline;  
+  }
+  .online-input{
+  margin-bottom: 0;
+  }
+  .subscription{  
+    margin-top: 0;
+  }
+  .online-form{
+  display: flex;
+  flex-direction: row;
+  }
+  .online-btn{
+  margin-left: 10px;
+  }        
 }
