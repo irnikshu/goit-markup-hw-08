@@ -751,16 +751,17 @@ body {
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-}
-
-.clients .clients__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .clients__item {
+  flex-basis: calc((100% - 30px)/2);
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   background-color: #ffffff;
 }
@@ -792,6 +793,22 @@ body {
 
 .clients__icon:hover, .clients__icon:focus {
   fill: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc((100% - 60px)/3);
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    flex-wrap: nowrap;
+  }
+  .clients__item {
+    width: 270px;
+  }
 }
 
 .section-features {
