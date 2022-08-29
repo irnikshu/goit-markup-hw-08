@@ -29,9 +29,10 @@
     }
     .features-list__descr {
     width: 270px;    
-    &:not(:last-child) {
-     margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //  margin-right: 30px;
+    // }
+        
 }
 }
 .features-list p {

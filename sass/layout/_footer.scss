@@ -7,7 +7,7 @@ footer {
 .footer_container {
   display: block;  
   text-align: center;
-  width: 100%;  
+  // width: 100%;  
   // align-items: baseline;  
 }
 .footer-list {
@@ -209,10 +209,15 @@ footer {
 }
 }
 @media screen and (min-width: 1200px){
+  .container{
+    width: 1200px;
+  }
   .footer_container {
   display: flex;
   text-align: center;
-  align-items: baseline;  
+  // justify-content: space-between;
+  align-items: baseline; 
+  
   }
   .online-input{
   margin-bottom: 0;
