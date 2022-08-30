@@ -124,7 +124,7 @@
     .project-list__element{
     // flex-basis: calc((100% - 30px)/2);
     width: 354px;
-    
+    margin-bottom: 0;
     }
 }
 @media screen and (min-width: 1200px){
@@ -134,9 +134,9 @@
   .filtrs{
     justify-content: center;
     margin-bottom: 50px;
-    & .filtrs__filtrs-btn:not(:last-child) {
-     margin-right: 8px;
-     }
+    // & .filtrs__filtrs-btn:not(:last-child) {
+    //  margin-right: 8px;
+    //  }
   }
   .project-list{
     width: 1200px;
