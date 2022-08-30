@@ -1,7 +1,7 @@
 .section-portfolio {
-  padding-top: 94px;
+  padding-top: 60px;
   /* margin-top: 94px; */
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 .filtrs {
   display: flex;
@@ -10,7 +10,7 @@
   // justify-content: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 40px;  
+  margin-bottom: 46px;  
   // margin-bottom: 50px;
   // & .filtrs__filtrs-btn:not(:last-child) {
   //   margin-right: 8px;
@@ -34,16 +34,16 @@
 }
 .project-list {
   display: block;
-  width: 450px;
+  width: 100%;
   // flex-wrap: wrap;
   // margin: -15px;
     }
 .project-list__element {
   /* width: calc((100%-60px) / 3); */
   /* margin-right: 30px; */
-  // margin: 15px;
+  margin-bottom: 30px;
   // width: 370px;
-  width: 450px;
+  width: 100%;
   cursor: pointer;
   /* background-color: chartreuse; */
 }
@@ -110,7 +110,7 @@
   .filtrs{
     flex-wrap: nowrap;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
     .project-list{
       display: flex;
@@ -128,6 +128,9 @@
     }
 }
 @media screen and (min-width: 1200px){
+  .section-portfolio {
+  padding-top: 94px;   
+  padding-bottom: 94px;}
   .filtrs{
     justify-content: center;
     margin-bottom: 50px;

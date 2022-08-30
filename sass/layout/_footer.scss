@@ -4,12 +4,14 @@ footer {
   padding-top: 60px;
   display: flex;
 }
+
 .footer_container {
-  display: block;  
+  display: block;
   text-align: center;
   // width: 100%;  
   // align-items: baseline;  
 }
+
 .footer-list {
   display: flex;
   justify-content: center;
@@ -29,6 +31,7 @@ footer {
   line-height: 1.19;
   text-decoration: none;
 }
+
 .auth-footer__link {
   color: rgba(255, 255, 255, 0.6);
 
@@ -38,6 +41,7 @@ footer {
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .auth-footer .auth-footer__link:hover,
 .auth-footer .auth-footer__link:focus {
   color: var(--accent-color);
@@ -52,9 +56,11 @@ footer {
   font-style: normal;
   margin-bottom: 9px;
 }
+
 .auth-footer__contact:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .title-footer {
   color: #ffffff;
   text-transform: uppercase;
@@ -64,22 +70,27 @@ footer {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+
 .footer-list__footer-icon {
   fill: #ffffff;
 }
+
 .footer-list {
   display: flex;
   justify-content: center;
 }
+
 .footer-list__footer-item {
   width: 44px;
   height: 44px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   & .footer-list__footer-link:hover,
   & .footer-list__footer-link:focus {
     background-color: var(--accent-color);
   }
 }
+
 .footer-list__footer-link {
   display: flex;
   justify-content: center;
@@ -89,14 +100,17 @@ footer {
   width: 100%;
   height: 100%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover .footer-list__footer-icon,
   &:focus .footer-list__footer-icon {
     fill: #ffffff;
   }
 }
+
 .footer-list {
   display: flex;
   justify-content: center;
+
   /* padding: 0;
   margin: 0; */
   & .footer-list__footer-item:not(:last-child) {
@@ -108,6 +122,7 @@ footer {
   display: block;
   // margin-right: 70px;
 }
+
 .footer-networks {
   display: block;
   justify-content: center;
@@ -131,9 +146,11 @@ footer {
   padding-top: 15px; */
   outline: none;
   border-radius: 4px;
+
   &:hover::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
+
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -149,6 +166,7 @@ footer {
   justify-content: center;
   text-align: center;
 }
+
 .online-btn {
   width: 200px;
   height: 50px;
@@ -164,19 +182,21 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   display: flex;
-  align-items: center; 
+  align-items: center;
   letter-spacing: 0.06em;
 
   color: #ffffff;
   // margin-left: 10px;
   // margin-right: 0;
 }
+
 .subscription {
 
   display: block;
   margin-top: 60px;
-  
+
 }
+
 .online-input {
   padding-left: 16px;
   width: 358px;
@@ -188,9 +208,11 @@ footer {
   background-color: var(--footer-background-color);
   color: var(--primary-background-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:focus {
     border-color: var(--accent-color);
   }
+
   margin-bottom: 20px;
 }
 
@@ -198,38 +220,58 @@ footer {
   margin-left: 10px;
 
 }
-@media screen and (min-width: 768px){
+
+@media screen and (min-width: 768px) {
   .footer_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-.footer-networks{
-  margin-top: 0;
-}
-}
-@media screen and (min-width: 1200px){
-  .container{
-    width: 1200px;
   }
-  .footer_container {
-  display: flex;
-  text-align: center;
-  // justify-content: space-between;
-  align-items: baseline; 
-  
-  }
-  .online-input{
-  margin-bottom: 0;
-  }
-  .subscription{  
+
+  .footer-networks {
     margin-top: 0;
   }
-  .online-form{
-  display: flex;
-  flex-direction: row;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
-  .online-btn{
-  margin-left: 10px;
-  }        
+
+  .footer_container {
+    display: flex;
+    text-align: center;
+    // justify-content: space-between;
+    align-items: baseline;
+
+  }
+  .footer-name{
+    display: block;
+      margin-right: 70px;
+      text-align: start;
+      flex-grow: 1;
+  }
+    .footer-networks {
+      display: block;
+      margin-right: 93px;
+      text-align: start;
+    }
+
+  .online-input {
+    margin-bottom: 0;
+  }
+
+  .subscription {
+    margin-top: 0;
+    text-align: start;
+  }
+
+  .online-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .online-btn {
+    margin-left: 10px;
+  }
 }

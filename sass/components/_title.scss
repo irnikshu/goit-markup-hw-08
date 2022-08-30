@@ -1,12 +1,13 @@
+
 .section-title {
-  @include font(36px, 700, 42px);
+  @include font(28px, 700, 33px);
   color: var(--title-text-color);
   // font-weight: 700;
   // font-size: 36px;
   // line-height: 1.17;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .features-list__title {
   @include font(14px, 700, 16px);
@@ -17,4 +18,19 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    .section-title {
+        @include font(36px, 700, 42px);
+        color: var(--title-text-color);
+        // font-weight: 700;
+        // font-size: 36px;
+        // line-height: 1.17;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+      }
+  }
 }
